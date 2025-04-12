@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         colors="true"
+         stopOnFailure="true"
+>
+    <testsuites>
+<!--         <testsuite name="Test Suite">
+            <directory suffix="ExampleTest.php">./tests/Feature</directory>
+            <directory suffix="ExampleTest.php">./tests/Unit</directory>
+        </testsuite> -->
+        <testsuite name="Creational Test">
+            <directory suffix="SingletonTest.php">./tests/Unit/Creational</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory suffix=".php">./main</directory>
+        </include>
+    </source>
+</phpunit>
